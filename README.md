@@ -16,3 +16,12 @@ You can edit this as needed in Dockerfile or override it when launching the cont
 
 5. Consider including a launch script (e.g. nfw_iter.sh in Simple_Substructure) to simplify container management if main.py does not sufficiently handle execution.
 6. Be sure to save necessary output (write data to file, save figures, etc) instead of printing/showing generated data/plots.
+7. Build the Docker image with
+> docker build -t <image_name> \<path>
+
+Note that Docker must be installed
+
+8. Test launching the container with
+> docker run <image_name>
+
+More advanced options can be found in Docker documentation (https://docs.docker.com/engine/reference/run/).
